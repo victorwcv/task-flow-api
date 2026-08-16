@@ -1,40 +1,85 @@
 # TaskFlow — Progress
 
-## Current stage
+> Living project state used to resume development across sessions.
+>
+> **Rule:** Update this file when a milestone, decision, or current focus changes.
+> Do not document every implementation detail here.
 
-Stage 1 — Initial API
+---
 
-## Completed
+## Current State
 
-- [ ] Project initialization
-- [ ] TypeScript configuration
-- [ ] Task domain model
-- [ ] In-memory storage
-- [ ] POST /tasks
-- [ ] GET /tasks
-- [ ] GET /tasks/:id
-- [ ] PATCH /tasks/:id
-- [ ] DELETE /tasks/:id
+**Stage:** 1 — Initial API  
+**Milestone:** Task domain + in-memory store  
+**Status:** 🟢 Completed  
+**Next:** Fastify HTTP integration
 
-## Current focus
+---
 
-Task domain modeling.
+## Roadmap
 
-## Architecture
+### Stage 1 — Initial API
 
-Currently intentionally minimal.
+- [x] Project initialization
+- [x] TypeScript configuration
+- [x] Task domain model
+- [x] Task creation input
+- [x] Task update input
+- [x] In-memory `TaskStore`
+- [x] Create task
+- [x] Get task by ID
+- [x] Get all tasks
+- [x] Update task
+- [x] Delete task
+- [ ] Fastify server
+- [ ] `POST /tasks`
+- [ ] `GET /tasks`
+- [ ] `GET /tasks/:id`
+- [ ] `PATCH /tasks/:id`
+- [ ] `DELETE /tasks/:id`
 
-## Decisions
+### Stage 2 — Runtime Validation
 
-- Node.js + TypeScript
-- Fastify
-- pnpm
-- In-memory storage initially
-- No premature abstractions
+- [ ] Request validation
+- [ ] Response validation
+- [ ] Error handling
+- [ ] Validation schemas
 
-## Next step
+### Stage 3 — Testing
 
-Implement the first task creation flow.
+- [ ] Unit tests
+- [ ] Store tests
+- [ ] API tests
+- [ ] Edge cases
+
+### Stage 4 — Persistence
+
+- [ ] PostgreSQL
+- [ ] Prisma
+- [ ] Repository layer
+- [ ] Replace in-memory storage
+
+### Stage 5 — Architecture Evolution
+
+- [ ] Service layer
+- [ ] Dependency injection
+- [ ] Domain boundaries
+- [ ] Architectural review
+
+---
+
+## Current Focus
+
+Implement the HTTP layer with Fastify.
+
+The next objective is to expose the existing `TaskStore` through:
+
+```text
+POST   /tasks
+GET    /tasks
+GET    /tasks/:id
+PATCH  /tasks/:id
+DELETE /tasks/:id
 
 ## Prompt
 
@@ -72,3 +117,4 @@ Primero lee el PROGRESS.md y dime:
 - y qué deberíamos implementar ahora.
 
 No avances automáticamente más allá del siguiente paso.
+```
