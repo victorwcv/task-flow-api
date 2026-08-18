@@ -1,6 +1,4 @@
-import type { Task } from "./types.js";
-import type { CreateTaskInput } from "./schemas.js";
-import type { UpdateTaskInput } from "./schemas.js";
+import type { CreateTaskInput, Task, UpdateTaskInput } from "./schemas.js";
 
 class TaskStore {
   private tasks = new Map<string, Task>();
