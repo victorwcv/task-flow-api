@@ -9,10 +9,10 @@
 
 ## Current State
 
-**Stage:** 1 — Initial API  
-**Milestone:** Initial Task API completed  
+**Stage:** 2 — Runtime Validation  
+**Milestone:** Zod + Fastify runtime validation completed  
 **Status:** 🟢 Completed  
-**Next:** Runtime validation & error handling
+**Next:** Testing
 
 ---
 
@@ -40,10 +40,18 @@
 
 ### Stage 2 — Runtime Validation
 
-- [ ] Request validation
-- [ ] Response validation
-- [ ] Error handling
-- [ ] Validation schemas
+- [x] Zod validation schemas
+- [x] Derive TypeScript types with `z.infer`
+- [x] Use `taskSchema` as the single source of truth
+- [x] Derive input schemas with `pick` / `partial`
+- [x] Request validation
+- [x] Response validation
+- [x] Fastify `ZodTypeProvider` integration
+- [x] Zod validator compiler
+- [x] Zod serializer compiler
+- [x] Validation error handling
+- [x] Runtime response validation verified
+- [x] Invalid request scenarios verified with Bruno
 
 ### Stage 3 — Testing
 
@@ -65,6 +73,17 @@
 - [ ] Dependency injection
 - [ ] Domain boundaries
 - [ ] Architectural review
+
+## Current Technical State
+
+### Validation
+
+The API currently validates:
+
+- Route parameters
+- Request bodies
+- Successful responses
+- Expected error responses
 
 ## Prompt
 
