@@ -10,9 +10,9 @@
 ## Current State
 
 **Stage:** 1 — Initial API  
-**Milestone:** Task domain + in-memory store  
+**Milestone:** Initial Task API completed  
 **Status:** 🟢 Completed  
-**Next:** Fastify HTTP integration
+**Next:** Runtime validation & error handling
 
 ---
 
@@ -31,12 +31,12 @@
 - [x] Get all tasks
 - [x] Update task
 - [x] Delete task
-- [ ] Fastify server
-- [ ] `POST /tasks`
-- [ ] `GET /tasks`
-- [ ] `GET /tasks/:id`
-- [ ] `PATCH /tasks/:id`
-- [ ] `DELETE /tasks/:id`
+- [x] Fastify server
+- [x] `POST /tasks`
+- [x] `GET /tasks`
+- [x] `GET /tasks/:id`
+- [x] `PATCH /tasks/:id`
+- [x] `DELETE /tasks/:id`
 
 ### Stage 2 — Runtime Validation
 
@@ -65,21 +65,6 @@
 - [ ] Dependency injection
 - [ ] Domain boundaries
 - [ ] Architectural review
-
----
-
-## Current Focus
-
-Implement the HTTP layer with Fastify.
-
-The next objective is to expose the existing `TaskStore` through:
-
-```text
-POST   /tasks
-GET    /tasks
-GET    /tasks/:id
-PATCH  /tasks/:id
-DELETE /tasks/:id
 
 ## Prompt
 
@@ -117,4 +102,7 @@ Primero lee el PROGRESS.md y dime:
 - y qué deberíamos implementar ahora.
 
 No avances automáticamente más allá del siguiente paso.
+
+```
+
 ```
