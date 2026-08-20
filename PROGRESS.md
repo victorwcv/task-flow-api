@@ -9,10 +9,12 @@
 
 ## Current State
 
-**Stage:** 2 — Runtime Validation  
-**Milestone:** Zod + Fastify runtime validation completed  
-**Status:** 🟢 Completed  
-**Next:** Testing
+## Current State
+
+**Stage:** 3 — Testing
+**Milestone:** Automated Store + API tests completed
+**Status:** 🟢 Completed
+**Next:** Persistence
 
 ---
 
@@ -55,10 +57,10 @@
 
 ### Stage 3 — Testing
 
-- [ ] Unit tests
-- [ ] Store tests
-- [ ] API tests
-- [ ] Edge cases
+- [x] Unit tests
+- [x] Store tests
+- [x] API tests
+- [x] Edge cases
 
 ### Stage 4 — Persistence
 
