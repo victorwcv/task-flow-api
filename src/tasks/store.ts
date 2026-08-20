@@ -1,6 +1,6 @@
 import type { CreateTaskInput, Task, UpdateTaskInput } from "./schemas.js";
 
-class TaskStore {
+export class TaskStore {
   private tasks = new Map<string, Task>();
 
   createTask(input: CreateTaskInput): Task {

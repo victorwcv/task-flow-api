@@ -121,7 +121,3 @@ Primero lee el PROGRESS.md y dime:
 - y qué deberíamos implementar ahora.
 
 No avances automáticamente más allá del siguiente paso.
-
-```
-
-```
