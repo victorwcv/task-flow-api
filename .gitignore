@@ -2,3 +2,11 @@ dist/
 coverage/
 .env
 node_modules/
+
+/src/generated/prisma
+
+# AI tooling
+.agents/
+.claude/
+.windsurf/
+skills-lock.json
